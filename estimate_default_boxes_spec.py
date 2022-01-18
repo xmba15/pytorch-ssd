@@ -23,8 +23,8 @@ def _get_args():
         default="vgg16-ssd",
     )
     parser.add_argument("--image_size", type=int, help="input image size", default=300)
-    parser.add_argument("--min_ratio", type=float, default=20)  # percentage 20%
-    parser.add_argument("--max_ratio", type=float, default=90)  # percentage 90%
+    parser.add_argument("--min_ratio", type=int, default=20)  # percentage 20%
+    parser.add_argument("--max_ratio", type=int, default=90)  # percentage 90%
     args = parser.parse_args()
 
     return args
